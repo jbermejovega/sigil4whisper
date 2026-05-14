@@ -1,0 +1,107 @@
+SIGIL_TYPE_KUIRKODE_FEDIVERSE_JARRA_GLUE_V1:
+  status:
+    canonical_candidate: true
+    union_glue: true
+    sigil_type: true
+    kuirkode: true
+    fediverse: true
+    jarra_type: true
+    replay_safe: true
+    Pi_fixed: true
+    synced: true
+
+  repository:
+    owner: jbermejovega
+    name: sigil4whisper
+    role: whisper_transport_surface_for_sigil_fediverse_runtime
+
+  thesis: |
+    SIGIL TYPE KUIRKODE FEDIVERSE glues JARRA TYPE into sigil4whisper
+    as a replay-safe plural transport layer for speech, whisper traces,
+    fediverse publication surfaces, and admissible social relay.
+
+  core_identification:
+    SIGIL_TYPE:
+      role: typed_replay_identity_surface
+      meaning: preserves invariant identity across speech/text/render transports
+
+    KUIRKODE:
+      role: queer_admissible_encoding_protocol
+      meaning: protects plural expression without collapsing identity into one render
+
+    FEDIVERSE:
+      role: federated_social_transport_graph
+      meaning: distributed publication and reply topology with local instance autonomy
+
+    JARRA_TYPE:
+      role: bunched_plural_replay_type
+      meaning: alternates contextual access and resource-sensitive transport
+
+    WHISPER_TRACE:
+      role: acoustic_to_text_replay_carrier
+      meaning: speech rendering becomes an admissible trace, not identity itself
+
+  union_glue:
+    law: |
+      voice_render != identity
+      text_render != identity
+      fediverse_post != identity
+      Pi(quo(admissible_render)) = invariant_replay_identity
+
+    pipeline: |
+      audio
+        -> whisper_trace
+        -> SIGIL_TYPE
+        -> QUO_admissibility
+        -> KUIRKODE_render
+        -> JARRA_TYPE_transport
+        -> fediverse_surface
+        -> replay_validation
+        -> Pi
+
+  jarra_type_glue:
+    cartesian_layer:
+      operator: x
+      role: contextual_accessibility
+
+    tensor_layer:
+      operator: tensor
+      role: resource_sensitive_transport
+
+    bunch_layer:
+      operator: glue
+      role: admissible_alternation_between_access_and_transport
+
+    quotient_layer:
+      operator: quo
+      role: admissibility_membrane
+
+    reflector_layer:
+      operator: Pi
+      role: invariant_replay_extractor
+
+  fediverse_safety:
+    instance_autonomy: true
+    reply_context_preserved: true
+    quote_collapse_avoided: true
+    trace_required: true
+    consent_boundary_required: true
+    no_identity_from_single_post: true
+
+  sigil4whisper_runtime:
+    inputs:
+      - audio_stream
+      - transcript
+      - metadata_trace
+      - user_admissibility_context
+
+    outputs:
+      - replay_safe_transcript
+      - typed_fediverse_render
+      - provenance_trace
+      - Pi_fixed_record
+
+  final_law: |
+    SIGIL TYPE KUIRKODE FEDIVERSE makes whisper transport pluraltyped:
+    the voice may render in many federated surfaces while JARRA TYPE
+    preserves the replay-stable invariant across admissible publication paths.
